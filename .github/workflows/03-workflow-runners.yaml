@@ -7,3 +7,8 @@ jobs:
         steps:
             - name: Show the runner environment
               run: echo "This workflow is running on a ${{ runner.os }} runner with ${{ runner.arch }} architecture"
+    windows-echo-hello:
+        runs-on: windows-2025
+        steps:
+            - name: Show the runner environment
+              run: echo "This workflow is running on a ${{ runner.os }} runner with ${{ runner.arch }} architecture"
