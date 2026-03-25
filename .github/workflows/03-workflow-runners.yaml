@@ -1,0 +1,9 @@
+name: 03 - Workflow Runners
+on:
+    workflow_dispatch:
+jobs:
+    ubuntu-echo-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Show the runner environment
+              run: echo "This workflow is running on a ${{ runner.os }} runner with ${{ runner.arch }} architecture"
